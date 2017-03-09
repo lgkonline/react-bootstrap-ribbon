@@ -1,0 +1,7 @@
+*:focus {
+    outline: none !important;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
