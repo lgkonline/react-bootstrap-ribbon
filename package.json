@@ -17,8 +17,12 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lgkonline/react-bootstrap-ribbon.git"
+  },
   "author": "LGK",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "babel-core": "^6.23.1",
     "babel-loader": "^6.3.2",
