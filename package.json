@@ -6,14 +6,12 @@
   "scripts": {
     "dev": "webpack -d --watch",
     "build": "webpack -p",
-    "babel": "babel",
-    "copy": "copy",
-    "serve": "./node_modules/.bin/webpack-dev-server --open",
-    "prepare1": "./node_modules/.bin/babel ./src/client/lib/ReactBootstrapRibbon.jsx -o ./dist/ReactBootstrapRibbon.js",
-    "prepare2": "./node_modules/.bin/babel ./src/client/lib/ReactBootstrapRibbonGroup.jsx -o ./dist/ReactBootstrapRibbonGroup.js",
-    "prepare3": "./node_modules/.bin/babel ./src/client/lib/ReactBootstrapRibbonGroupItem.jsx -o ./dist/ReactBootstrapRibbonGroupItem.js",
-    "prepare4": "./node_modules/.bin/babel ./src/client/lib/ReactBootstrapRibbonButton.jsx -o ./dist/ReactBootstrapRibbonButton.js",
-    "prepare5": "npm run copy .\\src\\client\\lib\\react-bootstrap-ribbon.css ./dist",
+    "serve": "webpack -d | webpack-dev-server --open",
+    "prepare1": "babel ./src/client/lib/ReactBootstrapRibbon.jsx -o ./dist/ReactBootstrapRibbon.js",
+    "prepare2": "babel ./src/client/lib/ReactBootstrapRibbonGroup.jsx -o ./dist/ReactBootstrapRibbonGroup.js",
+    "prepare3": "babel ./src/client/lib/ReactBootstrapRibbonGroupItem.jsx -o ./dist/ReactBootstrapRibbonGroupItem.js",
+    "prepare4": "babel ./src/client/lib/ReactBootstrapRibbonButton.jsx -o ./dist/ReactBootstrapRibbonButton.js",
+    "prepare5": "copy .\\src\\client\\lib\\react-bootstrap-ribbon.css .\\dist",
     "prepare": "npm run prepare1 | npm run prepare2 | npm run prepare3 | npm run prepare4 | npm run prepare5"
   },
   "files": [
