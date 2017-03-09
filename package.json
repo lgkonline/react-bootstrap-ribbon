@@ -1,6 +1,6 @@
 {
   "name": "react-bootstrap-ribbon",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A ribbon menu for React using Bootstrap",
   "main": "index.js",
   "scripts": {
