@@ -3,10 +3,10 @@
 Get a Microsoft inspired Ribbon menu for your React app. It uses Bootstrap controls.
 
 <h2>Desktop preview</h2>
-<img src="preview_desktop.jpg" style="max-width:100vw" alt="Ribbon menu on desktop"/>
+<img src="https://raw.githubusercontent.com/lgkonline/react-bootstrap-ribbon/master/preview_desktop.jpg" style="max-width:100vw" alt="Ribbon menu on desktop"/>
 
 <h2>Mobile preview</h2>
-<img src="preview_mobile.jpg" width="350" alt="Ribbon menu on mobile" style="float:right"/>
+<img src="https://raw.githubusercontent.com/lgkonline/react-bootstrap-ribbon/master/preview_mobile.jpg" width="350" alt="Ribbon menu on mobile" style="float:right"/>
 
 <h2>Installation</h2>
 
