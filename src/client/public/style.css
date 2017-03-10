@@ -5965,7 +5965,8 @@ body {
   border-bottom: none; }
 
 #header {
-  background: #61C376; }
+  background: #61C376;
+  margin-bottom: 0; }
 
 #header h1 {
   color: white; }
@@ -5973,3 +5974,16 @@ body {
 #header h1 small {
   color: inherit;
   font-weight: inherit; }
+
+#footer {
+  margin-bottom: 0;
+  margin-top: 30px;
+  padding-bottom: calc(48px - 1em); }
+
+#lgkLogo {
+  text-decoration: none;
+  font-size: 2em;
+  color: #db5344;
+  transition: color .5s; }
+  #lgkLogo:hover, #lgkLogo:focus {
+    color: #e37a6f; }
