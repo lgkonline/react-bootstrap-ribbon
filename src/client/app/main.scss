@@ -1,0 +1,22 @@
+*:focus {
+    outline: none !important;
+}
+
+body {
+    cursor: default;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+#header {
+    background: #61C376;
+}
+#header h1 {
+    color: white;
+}
+#header h1 small {
+    color: inherit;
+    font-weight: inherit;
+}
