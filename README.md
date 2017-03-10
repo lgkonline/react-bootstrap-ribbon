@@ -12,7 +12,7 @@ Get a Microsoft inspired Ribbon menu for your React app. It uses Bootstrap contr
 
 <p>
 Add it with NPM:<br>
-<code>npm i react-bootstrap-ribbon</code>
+<code>npm i -D react-bootstrap-ribbon</code>
 </p>
 
 <p>
