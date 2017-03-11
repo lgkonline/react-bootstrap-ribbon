@@ -18,8 +18,9 @@ class App extends React.Component {
             <div>
                 <header id="header" className="jumbotron">
                     <div className="container">
-                        <h1>React Bootstrap Ribbon <small>by LGK</small></h1>
-                        <h2>A ribbon menu inspired by Microsoft for React using Bootstrap</h2>
+                        <h1>React Bootstrap Ribbon</h1>
+                        <h3>A ribbon menu inspired by Microsoft for React using Bootstrap</h3>
+                        <h2><span className="icon-lgk-filled"/></h2>
                     </div>
                 </header>
 
