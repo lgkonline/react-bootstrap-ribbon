@@ -19,6 +19,7 @@ class App extends React.Component {
                 <header id="header" className="jumbotron">
                     <div className="container">
                         <h1>React Bootstrap Ribbon <small>by LGK</small></h1>
+                        <h2>A ribbon menu inspired by Microsoft for React using Bootstrap</h2>
                     </div>
                 </header>
 
@@ -27,6 +28,12 @@ class App extends React.Component {
                         <ul className="nav navbar-nav">
                             <li>
                                 <a href="https://github.com/lgkonline/react-bootstrap-ribbon"><span className="icon-github"/> This project on GitHub</a>
+                            </li>
+                            <li>
+                                <a href="https://www.npmjs.com/package/react-bootstrap-ribbon"><span className="icon-npm"/> This project on NPM</a>
+                            </li>
+                            <li>
+                                <a href="https://www.behance.net/gallery/49987941/React-Bootstrap-Ribbon"><span className="icon-behance2"/> This project on Behance</a>
                             </li>
                         </ul>
                         <ul className="nav navbar-nav navbar-right">
