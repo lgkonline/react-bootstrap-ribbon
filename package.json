@@ -41,6 +41,8 @@
     "react-bootstrap": "^0.30.8",
     "servor": "^3.2.0",
     "style-loader": "^0.13.2",
-    "webpack": "^3.12.0"
+    "webpack": "^3.12.0",
+    "mem": ">=4.0.0",
+    "braces": ">=2.3.1"
   }
 }
