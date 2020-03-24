@@ -3,12 +3,12 @@ import { render } from "react-dom";
 
 import { Tabs, Tab } from "react-bootstrap";
 
-import Ribbon from "../lib/ReactBootstrapRibbon.jsx";
-import RibbonGroup from "../lib/ReactBootstrapRibbonGroup.jsx";
-import RibbonGroupItem from "../lib/ReactBootstrapRibbonGroupItem.jsx";
-import RibbonButton from "../lib/ReactBootstrapRibbonButton.jsx";
+import Ribbon from "../../src/ReactBootstrapRibbon";
+import RibbonGroup from "../../src/ReactBootstrapRibbonGroup";
+import RibbonGroupItem from "../../src/ReactBootstrapRibbonGroupItem";
+import RibbonButton from "../../src/ReactBootstrapRibbonButton";
 
-import "../lib/react-bootstrap-ribbon.css";
+import "../../src/react-bootstrap-ribbon.css";
 import "./demo.css";
 
 class App extends React.Component {
