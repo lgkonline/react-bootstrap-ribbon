@@ -11,7 +11,7 @@ class ReactBootstrapRibbon extends React.Component {
     }
 
     handleChange(event) {
-        this.setState({mobileCurrentGroup: (event.target.value * 1)});
+        this.setState({ mobileCurrentGroup: (event.target.value * 1) });
     }
 
     render() {
@@ -19,7 +19,7 @@ class ReactBootstrapRibbon extends React.Component {
 
         return (
             <div>
-                <div className="visible-xs">
+                <div className="d-md-none">
                     <div className="mobile-ribbon ribbon">
                         <div className="ribbon-group-content">
                             <select className="mobile-ribbon-select form-control" onChange={(event) => this.handleChange(event)}>
@@ -39,7 +39,7 @@ class ReactBootstrapRibbon extends React.Component {
                     </div>
                 </div>
 
-                <div className="hidden-xs">
+                <div className="d-none d-md-block">
                     <div className="ribbon">
                         <div className="row row-eq-height row-2px">
                             {this.props.children}

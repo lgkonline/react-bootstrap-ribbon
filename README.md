@@ -1,4 +1,4 @@
-<h1>React Bootstrap Ribbon (1.x.x)</h1>
+<h1>React Bootstrap Ribbon</h1>
 
 Get a Microsoft inspired Ribbon menu for your React app. It uses Bootstrap controls.<br>
 <a href="https://www.npmjs.com/package/react-bootstrap-ribbon">Find React Bootstrap Ribbon on NPM.</a>
@@ -46,8 +46,8 @@ class App extends Component {
                     <h1 className="page-header">Hello World</h1>
 
                     <Ribbon>
-                        <RibbonGroup title="Clipboard" colClass="col-xs-3">
-                            <RibbonGroupItem colClass="col-xs-4">
+                        <RibbonGroup title="Clipboard" colClass="col-3">
+                            <RibbonGroupItem colClass="col-4">
                                 <RibbonButton>
                                     <div className="ribbon-icon">
                                         <svg className="bi bi-pencil" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -59,7 +59,7 @@ class App extends Component {
                                 </RibbonButton>
                             </RibbonGroupItem>
 
-                            <RibbonGroupItem colClass="col-xs-4">
+                            <RibbonGroupItem colClass="col-4">
                                 <RibbonButton>
                                     <div className="ribbon-icon">
                                         <svg className="bi bi-files" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -71,7 +71,7 @@ class App extends Component {
                                 </RibbonButton>
                             </RibbonGroupItem>
 
-                            <RibbonGroupItem colClass="col-xs-4">
+                            <RibbonGroupItem colClass="col-4">
                                 <RibbonButton>
                                     <div className="ribbon-icon">
                                         <svg className="bi bi-clipboard" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -84,8 +84,8 @@ class App extends Component {
                             </RibbonGroupItem>
                         </RibbonGroup>
 
-                        <RibbonGroup title="New" colClass="col-xs-3">
-                            <RibbonGroupItem colClass="col-xs-4">
+                        <RibbonGroup title="New" colClass="col-3">
+                            <RibbonGroupItem colClass="col-4">
                                 <RibbonButton>
                                     <div className="ribbon-icon">
                                         <svg className="bi bi-folder-plus" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -97,9 +97,9 @@ class App extends Component {
                                     <div>New folder</div>
                                 </RibbonButton>
                             </RibbonGroupItem>
-                            <RibbonGroupItem colClass="col-xs-8">
+                            <RibbonGroupItem colClass="col-8">
                                 <div className="row row-2px">
-                                    <RibbonGroupItem colClass="col-xs-12">
+                                    <RibbonGroupItem colClass="col-12">
                                         <RibbonButton>
                                             <svg className="bi bi-file-plus" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M9 1H4a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V8h-1v5a1 1 0 01-1 1H4a1 1 0 01-1-1V3a1 1 0 011-1h5V1z" />
@@ -109,7 +109,7 @@ class App extends Component {
                                 </RibbonButton>
                                     </RibbonGroupItem>
 
-                                    <RibbonGroupItem colClass="col-xs-12">
+                                    <RibbonGroupItem colClass="col-12">
                                         <RibbonButton>
                                             <svg className="bi bi-inbox" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                 <path fillRule="evenodd" d="M3.81 4.063A1.5 1.5 0 014.98 3.5h6.04a1.5 1.5 0 011.17.563l3.7 4.625a.5.5 0 01-.78.624l-3.7-4.624a.5.5 0 00-.39-.188H4.98a.5.5 0 00-.39.188L.89 9.312a.5.5 0 11-.78-.624l3.7-4.625z" clipRule="evenodd" />
