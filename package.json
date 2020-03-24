@@ -4,9 +4,10 @@
   "description": "A ribbon menu for React using Bootstrap",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack -d --watch",
+    "watch": "webpack -d --watch",
     "build": "webpack -p",
-    "start": "webpack -d | webpack-dev-server --open",
+    "serve": "servor ./src/client/ index.html 8080",
+    "start": "concurrently \"npm run serve\" \"npm run watch\" ",
     "prepare1": "babel ./src/client/lib/ReactBootstrapRibbon.jsx -o ./dist/ReactBootstrapRibbon.js",
     "prepare2": "babel ./src/client/lib/ReactBootstrapRibbonGroup.jsx -o ./dist/ReactBootstrapRibbonGroup.js",
     "prepare3": "babel ./src/client/lib/ReactBootstrapRibbonGroupItem.jsx -o ./dist/ReactBootstrapRibbonGroupItem.js",
@@ -34,12 +35,13 @@
     "babel-loader": "^6.3.2",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.23.0",
+    "concurrently": "^5.1.0",
     "copy": "^0.3.0",
     "css-loader": "^3.4.2",
     "file-loader": "^0.10.1",
     "react-bootstrap": "^0.30.8",
+    "servor": "^3.2.0",
     "style-loader": "^0.13.2",
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.4.1"
+    "webpack": "^2.2.1"
   }
 }

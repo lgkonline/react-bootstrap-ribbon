@@ -1,4 +1,4 @@
-<h1>React Bootstrap Ribbon</h1>
+<h1>React Bootstrap Ribbon (1.x.x)</h1>
 
 Get a Microsoft inspired Ribbon menu for your React app. It uses Bootstrap controls.<br>
 <a href="https://www.npmjs.com/package/react-bootstrap-ribbon">Find React Bootstrap Ribbon on NPM.</a>
