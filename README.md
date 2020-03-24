@@ -132,4 +132,4 @@ export default App;
 
 <h2>Run an example</h2>
 Clone this repo on your PC. After that install all dependencies with <code>npm i</code>.<br>
-Then run <code>npm start</code> and you should see the example in your browser. You can see the code under <code>./src/client/app/index.jsx</code>.
+Then run <code>npm start</code> and you should see the example in your browser. You can see the code under <code>./docs/src/index.js</code>.

@@ -8,10 +8,10 @@
     "build": "webpack -p",
     "serve": "servor ./docs/ index.html 8080",
     "start": "concurrently \"npm run serve\" \"npm run watch\" ",
-    "prepare1": "babel ./src/ReactBootstrapRibbon.jsx -o ./dist/ReactBootstrapRibbon.js",
-    "prepare2": "babel ./src/ReactBootstrapRibbonGroup.jsx -o ./dist/ReactBootstrapRibbonGroup.js",
-    "prepare3": "babel ./src/ReactBootstrapRibbonGroupItem.jsx -o ./dist/ReactBootstrapRibbonGroupItem.js",
-    "prepare4": "babel ./src/ReactBootstrapRibbonButton.jsx -o ./dist/ReactBootstrapRibbonButton.js",
+    "prepare1": "babel ./src/ReactBootstrapRibbon.js -o ./dist/ReactBootstrapRibbon.js",
+    "prepare2": "babel ./src/ReactBootstrapRibbonGroup.js -o ./dist/ReactBootstrapRibbonGroup.js",
+    "prepare3": "babel ./src/ReactBootstrapRibbonGroupItem.js -o ./dist/ReactBootstrapRibbonGroupItem.js",
+    "prepare4": "babel ./src/ReactBootstrapRibbonButton.js -o ./dist/ReactBootstrapRibbonButton.js",
     "prepare5": "copy .\\src\\react-bootstrap-ribbon.css .\\dist",
     "dist": "npm run prepare1 | npm run prepare2 | npm run prepare3 | npm run prepare4 | npm run prepare5"
   },
@@ -25,11 +25,11 @@
   "author": "LGK",
   "license": "MIT",
   "dependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "peerDependencies": {
-    "react-bootstrap": "^0.30.8"
+    "react-bootstrap": "^0.33.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -43,7 +43,7 @@
     "css-loader": "^3.4.2",
     "mini-css-extract-plugin": "^0.9.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
-    "react-bootstrap": "^0.30.8",
+    "react-bootstrap": "^0.33.1",
     "servor": "^3.2.0",
     "terser-webpack-plugin": "^2.3.5",
     "webpack": "^4.42.1",
