@@ -41,6 +41,6 @@
     "react-bootstrap": "^0.30.8",
     "servor": "^3.2.0",
     "style-loader": "^0.13.2",
-    "webpack": "^2.7.0"
+    "webpack": "^3.12.0"
   }
 }
