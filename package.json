@@ -12,7 +12,7 @@
     "prepare2": "babel ./src/ReactBootstrapRibbonGroup.js -o ./dist/ReactBootstrapRibbonGroup.js",
     "prepare3": "babel ./src/ReactBootstrapRibbonGroupItem.js -o ./dist/ReactBootstrapRibbonGroupItem.js",
     "prepare4": "babel ./src/ReactBootstrapRibbonButton.js -o ./dist/ReactBootstrapRibbonButton.js",
-    "prepare5": "copy .\\src\\react-bootstrap-ribbon.css .\\dist",
+    "prepare5": "copy ./src/react-bootstrap-ribbon.css ./dist",
     "dist": "npm run prepare1 | npm run prepare2 | npm run prepare3 | npm run prepare4 | npm run prepare5"
   },
   "files": [
