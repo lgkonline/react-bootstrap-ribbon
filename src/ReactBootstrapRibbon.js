@@ -1,5 +1,5 @@
 import React from "react";
-// import "./react-bootstrap-ribbon.css";
+import PropTypes from "prop-types";
 
 class ReactBootstrapRibbon extends React.Component {
     constructor() {
@@ -7,6 +7,13 @@ class ReactBootstrapRibbon extends React.Component {
 
         this.state = {
             mobileCurrentGroup: 0
+        };
+    }
+
+    static get defaultProps() {
+        return {
+            height: "8rem",
+            breakpoint: "md"
         };
     }
 
@@ -18,8 +25,8 @@ class ReactBootstrapRibbon extends React.Component {
         const children = Array.isArray(this.props.children) ? this.props.children : [this.props.children];
 
         return (
-            <div>
-                <div className="d-md-none">
+            <div className="bg-light">
+                <div className={`d-${this.props.breakpoint}-none`}>
                     <div className="mobile-ribbon ribbon">
                         <div className="ribbon-group-content">
                             <select className="mobile-ribbon-select form-control" onChange={(event) => this.handleChange(event)}>
@@ -29,8 +36,8 @@ class ReactBootstrapRibbon extends React.Component {
 
                         {children.map((item, index) => {
                             return (
-                                <div key={index} className={"mobile-ribbon-item ribbon-group-content " + (index === this.state.mobileCurrentGroup ? "active" : "")}>
-                                    <div className="row row-2px">
+                                <div key={index} className={"ribbon-group-content " + (index === this.state.mobileCurrentGroup ? "d-block" : "d-none")}>
+                                    <div className="row no-gutters">
                                         {item.props.children}
                                     </div>
                                 </div>
@@ -39,9 +46,9 @@ class ReactBootstrapRibbon extends React.Component {
                     </div>
                 </div>
 
-                <div className="d-none d-md-block">
-                    <div className="ribbon">
-                        <div className="row row-eq-height row-2px">
+                <div className={`d-none d-${this.props.breakpoint}-block`}>
+                    <div className="ribbon d-flex" style={{ height: this.props.height }}>
+                        <div className="row no-gutters w-100 h-100">
                             {this.props.children}
                         </div>
                     </div>
@@ -50,5 +57,10 @@ class ReactBootstrapRibbon extends React.Component {
         );
     }
 }
+
+ReactBootstrapRibbon.propTypes = {
+    height: PropTypes.string,
+    breakpoint: PropTypes.oneOf(["sm", "md", "lg", "xl"])
+};
 
 export default ReactBootstrapRibbon;

@@ -3,9 +3,7 @@ import { render } from "react-dom";
 
 import { Tabs, Tab } from "react-bootstrap";
 
-import "../../src/react-bootstrap-ribbon.css";
-import "bootstrap/dist/css/bootstrap.css";
-import "./demo.css";
+import "./demo.scss";
 import { ExampleRibbon } from "./ExampleRibbon";
 
 import Ribbon from "../../src/ReactBootstrapRibbon";
@@ -35,7 +33,7 @@ class App extends React.Component {
                                 <RibbonGroup title="Send">
                                     <RibbonGroupItem>
                                         <RibbonButton>
-                                            <div className="ribbon-icon">
+                                            <div className="text-center">
                                                 <svg className="bi bi-box-arrow-up" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                     <path fillRule="evenodd" d="M4.646 4.354a.5.5 0 00.708 0L8 1.707l2.646 2.647a.5.5 0 00.708-.708l-3-3a.5.5 0 00-.708 0l-3 3a.5.5 0 000 .708z" clipRule="evenodd" />
                                                     <path fillRule="evenodd" d="M8 11.5a.5.5 0 00.5-.5V2a.5.5 0 00-1 0v9a.5.5 0 00.5.5z" clipRule="evenodd" />
@@ -48,7 +46,7 @@ class App extends React.Component {
 
                                     <RibbonGroupItem>
                                         <RibbonButton>
-                                            <div className="ribbon-icon">
+                                            <div className="text-center">
                                                 <svg className="bi bi-envelope" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                     <path fillRule="evenodd" d="M14 3H2a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V4a1 1 0 00-1-1zM2 2a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2H2z" clipRule="evenodd" />
                                                     <path fillRule="evenodd" d="M.071 4.243a.5.5 0 01.686-.172L8 8.417l7.243-4.346a.5.5 0 01.514.858L8 9.583.243 4.93a.5.5 0 01-.172-.686z" clipRule="evenodd" />
@@ -63,7 +61,7 @@ class App extends React.Component {
                                 <RibbonGroup title="Release for">
                                     <RibbonGroupItem colClass="col-xs-12">
                                         <RibbonButton>
-                                            <div className="ribbon-icon">
+                                            <div className="text-center">
                                                 <svg className="bi bi-lock-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                                     <rect width="11" height="9" x="2.5" y="7" rx="2" />
                                                     <path fillRule="evenodd" d="M4.5 4a3.5 3.5 0 117 0v3h-1V4a2.5 2.5 0 00-5 0v3h-1V4z" clipRule="evenodd" />

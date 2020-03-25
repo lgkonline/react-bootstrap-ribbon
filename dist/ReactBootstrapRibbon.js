@@ -20,7 +20,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-import React from "react"; // import "./react-bootstrap-ribbon.css";
+import React from "react";
+import PropTypes from "prop-types";
 
 var ReactBootstrapRibbon = /*#__PURE__*/function (_React$Component) {
   _inherits(ReactBootstrapRibbon, _React$Component);
@@ -52,8 +53,10 @@ var ReactBootstrapRibbon = /*#__PURE__*/function (_React$Component) {
       var _this2 = this;
 
       var children = Array.isArray(this.props.children) ? this.props.children : [this.props.children];
-      return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-        className: "visible-xs"
+      return /*#__PURE__*/React.createElement("div", {
+        className: "bg-light"
+      }, /*#__PURE__*/React.createElement("div", {
+        className: "d-".concat(this.props.breakpoint, "-none")
       }, /*#__PURE__*/React.createElement("div", {
         className: "mobile-ribbon ribbon"
       }, /*#__PURE__*/React.createElement("div", {
@@ -71,21 +74,36 @@ var ReactBootstrapRibbon = /*#__PURE__*/function (_React$Component) {
       }))), children.map(function (item, index) {
         return /*#__PURE__*/React.createElement("div", {
           key: index,
-          className: "mobile-ribbon-item ribbon-group-content " + (index === _this2.state.mobileCurrentGroup ? "active" : "")
+          className: "ribbon-group-content " + (index === _this2.state.mobileCurrentGroup ? "d-block" : "d-none")
         }, /*#__PURE__*/React.createElement("div", {
-          className: "row row-2px"
+          className: "row no-gutters"
         }, item.props.children));
       }))), /*#__PURE__*/React.createElement("div", {
-        className: "hidden-xs"
+        className: "d-none d-".concat(this.props.breakpoint, "-block")
       }, /*#__PURE__*/React.createElement("div", {
-        className: "ribbon"
+        className: "ribbon d-flex",
+        style: {
+          height: this.props.height
+        }
       }, /*#__PURE__*/React.createElement("div", {
-        className: "row row-eq-height row-2px"
+        className: "row no-gutters w-100 h-100"
       }, this.props.children))));
+    }
+  }], [{
+    key: "defaultProps",
+    get: function get() {
+      return {
+        height: "8rem",
+        breakpoint: "md"
+      };
     }
   }]);
 
   return ReactBootstrapRibbon;
 }(React.Component);
 
+ReactBootstrapRibbon.propTypes = {
+  height: PropTypes.string,
+  breakpoint: PropTypes.oneOf(["sm", "md", "lg", "xl"])
+};
 export default ReactBootstrapRibbon;

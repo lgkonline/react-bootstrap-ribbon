@@ -37,15 +37,15 @@ var ReactBootstrapRibbonGroup = /*#__PURE__*/function (_React$Component) {
     key: "render",
     value: function render() {
       return /*#__PURE__*/React.createElement("div", {
-        className: "ribbon-col row-2px-col " + (this.props.colClass ? this.props.colClass : "col-sm-6")
+        className: "ribbon-col h-100 " + (this.props.colClass ? this.props.colClass : "col-sm-6")
       }, /*#__PURE__*/React.createElement("div", {
-        className: "ribbon-group"
+        className: "ribbon-group h-100 d-flex flex-column"
       }, /*#__PURE__*/React.createElement("div", {
-        className: "ribbon-group-content"
+        className: "ribbon-group-content h-100 flex-fill"
       }, /*#__PURE__*/React.createElement("div", {
-        className: "row row-2px"
+        className: "row no-gutters row-2px h-100 p-1"
       }, this.props.children)), /*#__PURE__*/React.createElement("div", {
-        className: "ribbon-group-title"
+        className: "ribbon-group-title text-center"
       }, this.props.title)));
     }
   }]);

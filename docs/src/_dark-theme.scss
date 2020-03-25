@@ -1,0 +1,132 @@
+// Open the following link to edit this config on Customize Bootstrap
+// https://lgkonline.github.io/customize-bootstrap/#%7B%22btHashVars%22%3A%7B%22%24gray-900%22%3A%22%23121212%22%2C%22%24white%22%3A%22%23fff%22%2C%22%24gray-800%22%3A%22%23232323%22%2C%22%24blue%22%3A%22lighten(%23096EB0%2C%2025%25)%22%2C%22%24primary%22%3A%22%24blue%22%2C%22%24gray-700%22%3A%22%23333333%22%2C%22%24pink%22%3A%22%23ff6caf%22%2C%22%24gray-400%22%3A%22%23ced4da%22%2C%22%24gray-500%22%3A%22%23adb5bd%22%2C%22%24black%22%3A%22%23000%22%2C%22%24gray-200%22%3A%22%23e9ecef%22%2C%22%24gray-300%22%3A%22%23dee2e6%22%2C%22%24gray-600%22%3A%22%236c757d%22%2C%22%24body-bg%22%3A%22%24gray-900%22%2C%22%24body-color%22%3A%22%24white%22%2C%22%24link-color%22%3A%22%24primary%22%2C%22%24link-hover-color%22%3A%22lighten(%24link-color%2C%2015%25)%22%2C%22%24table-bg%22%3A%22%24gray-800%22%2C%22%24table-border-color%22%3A%22%24gray-700%22%2C%22%24input-color%22%3A%22%24body-color%22%2C%22%24input-placeholder-color%22%3A%22%24gray-400%22%2C%22%24input-disabled-bg%22%3A%22%24gray-500%22%2C%22%24input-border-color%22%3A%22%24gray-600%22%2C%22%24input-group-addon-bg%22%3A%22%24gray-700%22%2C%22%24input-bg%22%3A%22rgba(%24white%2C%20.125)%22%2C%22%24card-bg%22%3A%22%24gray-800%22%2C%22%24nav-tabs-link-active-color%22%3A%22%24gray-300%22%2C%22%24nav-tabs-border-color%22%3A%22%24gray-700%22%2C%22%24nav-tabs-link-active-border-color%22%3A%22%24nav-tabs-border-color%20%24nav-tabs-border-color%20transparent%22%2C%22%24nav-tabs-link-active-bg%22%3A%22%24gray-700%22%2C%22%24nav-tabs-link-hover-border-color%22%3A%22%24gray-800%20%24gray-800%20transparent%22%2C%22%24modal-content-bg%22%3A%22%24gray-800%22%2C%22%24modal-header-border-color%22%3A%22%24gray-700%22%2C%22%24jumbotron-bg%22%3A%22%24gray-700%22%2C%22%24list-group-border-color%22%3A%22rgba(%24white%2C%20.125)%22%2C%22%24list-group-bg%22%3A%22%24gray-700%22%2C%22%24list-group-hover-bg%22%3A%22%24gray-600%22%2C%22%24list-group-action-color%22%3A%22%24gray-200%22%2C%22%24list-group-action-active-bg%22%3A%22%24gray-500%22%2C%22%24light%22%3A%22%24gray-700%22%2C%22%24navbar-light-color%22%3A%22rgba(%24white%2C%20.5)%22%2C%22%24navbar-light-hover-color%22%3A%22rgba(%24white%2C%20.7)%22%2C%22%24navbar-light-active-color%22%3A%22rgba(%24white%2C%20.9)%22%2C%22%24navbar-light-disabled-color%22%3A%22rgba(%24white%2C%20.3)%22%2C%22%24navbar-light-toggler-border-color%22%3A%22rgba(%24white%2C%20.1)%22%2C%22%24card-cap-bg%22%3A%22rgba(%24white%2C%20.03)%22%2C%22%24close-color%22%3A%22%24body-color%22%2C%22%24close-text-shadow%22%3A%220%201px%200%20%24black%22%2C%22%24card-border-color%22%3A%22rgba(%24white%2C%20.125)%22%2C%22%24thumbnail-border-color%22%3A%22%24gray-700%22%2C%22%24pagination-bg%22%3A%22%24body-bg%22%2C%22%24pagination-border-color%22%3A%22%24gray-700%22%2C%22%24pagination-hover-bg%22%3A%22%24gray-800%22%2C%22%24pagination-hover-border-color%22%3A%22%24gray-700%22%2C%22%24pagination-disabled-border-color%22%3A%22%24gray-700%22%2C%22%24pagination-disabled-bg%22%3A%22%24body-bg%22%2C%22%24pagination-disabled-color%22%3A%22%24gray-400%22%7D%7D
+
+
+
+// Color system
+//
+
+$gray-900: #121212;
+$white: #fff;
+$gray-800: #232323;
+$blue: lighten(#096EB0, 25%);
+$primary: $blue;
+$gray-700: #333333;
+$pink: #ff6caf;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$black: #000;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-600: #6c757d;
+$light: $gray-700;
+
+
+// Body
+//
+
+$body-bg: $gray-900;
+$body-color: $white;
+
+
+// Links
+//
+
+$link-color: $primary;
+$link-hover-color: lighten($link-color, 15%);
+
+
+// Tables
+//
+
+$table-bg: $gray-800;
+$table-border-color: $gray-700;
+
+
+// Forms
+//
+
+$input-color: $body-color;
+$input-placeholder-color: $gray-400;
+$input-disabled-bg: $gray-500;
+$input-border-color: $gray-600;
+$input-group-addon-bg: $gray-700;
+$input-bg: rgba($white, .125);
+
+
+// Navs
+//
+
+$nav-tabs-link-active-color: $gray-300;
+$nav-tabs-border-color: $gray-700;
+$nav-tabs-link-active-border-color: $nav-tabs-border-color $nav-tabs-border-color transparent;
+$nav-tabs-link-active-bg: $gray-700;
+$nav-tabs-link-hover-border-color: $gray-800 $gray-800 transparent;
+
+
+// Navbar
+//
+
+$navbar-light-color: rgba($white, .5);
+$navbar-light-hover-color: rgba($white, .7);
+$navbar-light-active-color: rgba($white, .9);
+$navbar-light-disabled-color: rgba($white, .3);
+$navbar-light-toggler-border-color: rgba($white, .1);
+
+
+// Pagination
+//
+
+$pagination-bg: $body-bg;
+$pagination-border-color: $gray-700;
+$pagination-hover-bg: $gray-800;
+$pagination-hover-border-color: $gray-700;
+$pagination-disabled-border-color: $gray-700;
+$pagination-disabled-bg: $body-bg;
+$pagination-disabled-color: $gray-400;
+
+
+// Jumbotron
+//
+
+$jumbotron-bg: $gray-700;
+
+
+// Cards
+//
+
+$card-bg: $gray-800;
+$card-cap-bg: rgba($white, .03);
+$card-border-color: rgba($white, .125);
+
+
+// Modals
+//
+
+$modal-content-bg: $gray-800;
+$modal-header-border-color: $gray-700;
+
+
+// List group
+//
+
+$list-group-border-color: rgba($white, .125);
+$list-group-bg: $gray-700;
+$list-group-hover-bg: $gray-600;
+$list-group-action-color: $gray-200;
+$list-group-action-active-bg: $gray-500;
+
+
+// Image thumbnails
+//
+
+$thumbnail-border-color: $gray-700;
+
+
+// Close
+//
+
+$close-color: $body-color;
+$close-text-shadow: 0 1px 0 $black;
+
+
