@@ -1,4 +1,4 @@
-@import "./dark-theme";
+$success: #26de81;
 
 @import "~bootstrap/scss/bootstrap";
 @import "../../src/react-bootstrap-ribbon.css";
@@ -6,4 +6,8 @@
 .nav-tabs,
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
     border-bottom-color: transparent;
+}
+
+.docs-first-section {
+    background-image: linear-gradient(rgba($body-color,.03), rgba($body-color,.05));
 }

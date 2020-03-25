@@ -12,12 +12,13 @@ const PATHS = {
 
 module.exports = {
     context: PATHS.src,
-    entry: [
-        "./index.js",
-    ],
+    entry: {
+        "main": "./index.js",
+        "dark": "./dark.scss"
+    },
     output: {
         path: PATHS.dist,
-        filename: "bundle.js",
+        filename: "[name].js",
     },
     module: {
         rules: [
@@ -43,7 +44,10 @@ module.exports = {
         minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
     },
     plugins: [
-        new MiniCssExtractPlugin(),
+        new MiniCssExtractPlugin({
+            filename: "[name].css",
+            chunkFilename: "[name].css"
+        }),
         // new PurgecssPlugin({
         //     paths: globAll.sync([`${PATHS.src}/**/*`, `${PATHS.dist}/**/*`], { nodir: true })
         // })
