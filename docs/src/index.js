@@ -29,7 +29,7 @@ function App() {
     };
 
     return (
-        <main className="pb-5">
+        <main>
             <header className="jumbotron jumbotron-fluid bg-success mb-0">
                 <div className="container text-center">
                     <h1 className="d-none d-md-block display-3 font-weight-bold">React Bootstrap Ribbon</h1>
@@ -126,7 +126,7 @@ function App() {
                         <h2 className="mt-4 mb-3">Install with NPM</h2>
                         <p>This is the recommended method. This way you'll always get the latest version.</p>
 
-                        <p className="lead">
+                        <p>
                             <code>npm install --save react-bootstrap-ribbon</code>
                         </p>
 
@@ -140,6 +140,27 @@ function App() {
                     </article>
                 </div>
             </section>
+
+            <footer className="bg-light mt-5 py-3">
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            &copy; {new Date().getFullYear()} by LGK – Made with 🧡in Germany
+                        </div>
+
+                        <div className="col text-center">
+                            <h4>
+                                <a href="https://lgk.io" target="_blank" rel="noopener noreferrer"><LgkLogo /></a>
+                            </h4>
+                        </div>
+
+                        <div className="col text-right">
+                            <a href="https://lgk.io/site/contact" target="_blank" rel="noopener noreferrer">Contact</a>{" – "}
+                            <a href="https://lgk.io/site/imprint" target="_blank" rel="noopener noreferrer">Imprint</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </main>
     );
 }
