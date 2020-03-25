@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { render } from "react-dom";
+import "babel-polyfill";
+import ReactEmbedGist from "react-embed-gist";
 
 import { Tabs, Tab, Form } from "react-bootstrap";
 
@@ -14,6 +16,7 @@ import RibbonButton from "../../src/ReactBootstrapRibbonButton";
 
 function App() {
     const [dark, setDark] = useState(false);
+    const [showExampleCode, setShowExampleCode] = useState(false);
     const cssEmbed = document.getElementById("css-embed");
     const lgkPillBtn = document.querySelector(".lgk-pill-btn");
 
@@ -56,11 +59,31 @@ function App() {
                     </p>
 
                     <h2 className="mt-4 mb-3">Simple ribbon</h2>
+                    <p>
+                        <a href="#" onClick={e => { e.preventDefault(); setShowExampleCode(!showExampleCode); }}>Show example code</a>
+                    </p>
+                    {showExampleCode &&
+                        <div className="card mb-3">
+                            <div className="card-header">
+                                {"ExampleRibbon.js"}
+                                <button type="button" className="close" aria-label="Close" onClick={() => setShowExampleCode(false)}>
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <ReactEmbedGist gist="lgkonline/e22c4ffc1f9846ada186883f76ba793e" titleClass="d-none" file="ExampleRibbon.js" />
+                        </div>
+                    }
 
                     <ExampleRibbon />
 
 
                     <h2 className="mt-4 mb-3">Tabbed ribbons</h2>
+
+                    <p>
+                        Use multiple ribbons and them into Bootstraps Tab components. You can do this with <a href="https://react-bootstrap.netlify.com/components/tabs/" target="_blank" rel="noopener noreferrer">react-bootstrap</a>
+                        {" "}or <a href="https://reactstrap.github.io/components/tabs/" target="_blank" rel="noopener noreferrer">reactstrap</a>.
+                    </p>
 
                     <Tabs defaultActiveKey={0} transition={false} id="example-tabbed-ribbon">
                         <Tab eventKey={0} title="Start">
@@ -118,8 +141,6 @@ function App() {
 
             <section>
                 <div className="container">
-
-
                     <article>
                         <h1 className="display-4 mt-5 mb-3">Getting started</h1>
 
@@ -137,6 +158,12 @@ function App() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >Get the latest release</a>
+                    </article>
+
+                    <article>
+                        <h1 className="display-4 mt-5 mb-3">Usage</h1>
+
+                        <ReactEmbedGist gist="lgkonline/e22c4ffc1f9846ada186883f76ba793e" titleClass="d-none" file="App.js" />
                     </article>
                 </div>
             </section>

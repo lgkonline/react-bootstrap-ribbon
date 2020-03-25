@@ -1,6 +1,6 @@
 {
   "name": "react-bootstrap-ribbon",
-  "version": "4.0.0-alpha",
+  "version": "4.0.0-alpha1",
   "description": "A ribbon menu for React using Bootstrap",
   "main": "index.js",
   "scripts": {
@@ -39,6 +39,7 @@
     "@babel/preset-react": "^7.9.4",
     "babel": "^6.23.0",
     "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.4.1",
     "concurrently": "^5.1.0",
     "copy": "^0.3.2",
@@ -48,6 +49,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "prop-types": "^15.7.2",
     "react-bootstrap": "^1.0.0",
+    "react-embed-gist": "^1.0.10",
     "sass-loader": "^8.0.2",
     "servor": "^3.2.0",
     "terser-webpack-plugin": "^2.3.5",
