@@ -1,6 +1,6 @@
 {
   "name": "react-bootstrap-ribbon",
-  "version": "4.0.0-alpha.2",
+  "version": "4.0.0",
   "description": "A ribbon menu for React using Bootstrap",
   "main": "index.js",
   "scripts": {
@@ -23,8 +23,24 @@
     "type": "git",
     "url": "https://github.com/lgkonline/react-bootstrap-ribbon.git"
   },
-  "author": "LGK",
+  "author": {
+    "name": "Lars Gerrit Kliesing // LGK",
+    "url": "https://lgk.io"
+  },
+  "keywords": [
+    "react",
+    "bootstrap",
+    "ribbon",
+    "ribbon-interface",
+    "ui",
+    "bootstrap4",
+    "css",
+    "javascript",
+    "ribbon-menu",
+    "microsoft"
+  ],
   "license": "MIT",
+  "homepage": "https://ribbon.lgk.io",
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
