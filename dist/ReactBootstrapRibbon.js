@@ -86,7 +86,7 @@ var ReactBootstrapRibbon = /*#__PURE__*/function (_React$Component) {
           height: this.props.height
         }
       }, /*#__PURE__*/React.createElement("div", {
-        className: "row no-gutters w-100 h-100"
+        className: "row no-gutters w-100"
       }, this.props.children))));
     }
   }], [{

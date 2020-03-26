@@ -1,6 +1,6 @@
 {
   "name": "react-bootstrap-ribbon",
-  "version": "4.0.0-alpha.1",
+  "version": "4.0.0-alpha.2",
   "description": "A ribbon menu for React using Bootstrap",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,8 @@
     "prepare3": "npx babel ./src/ReactBootstrapRibbonGroupItem.js -o ./dist/ReactBootstrapRibbonGroupItem.js",
     "prepare4": "npx babel ./src/ReactBootstrapRibbonButton.js -o ./dist/ReactBootstrapRibbonButton.js",
     "prepare5": "cpy ./src/react-bootstrap-ribbon.css ./dist",
-    "dist": "npm run prepare1 | npm run prepare2 | npm run prepare3 | npm run prepare4 | npm run prepare5"
+    "dist": "npm run prepare1 | npm run prepare2 | npm run prepare3 | npm run prepare4 | npm run prepare5",
+    "prepublish": "npm run dist"
   },
   "files": [
     "dist"

@@ -48,7 +48,7 @@ class ReactBootstrapRibbon extends React.Component {
 
                 <div className={`d-none d-${this.props.breakpoint}-block`}>
                     <div className="ribbon d-flex" style={{ height: this.props.height }}>
-                        <div className="row no-gutters w-100 h-100">
+                        <div className="row no-gutters w-100">
                             {this.props.children}
                         </div>
                     </div>
