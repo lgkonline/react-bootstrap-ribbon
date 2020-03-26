@@ -35,28 +35,57 @@ function App() {
         <main>
             <header className="jumbotron jumbotron-fluid bg-success mb-0">
                 <div className="container text-center">
+                    <h1 className="">
+                        <span className="icon-lgk-menu-thick" />
+                    </h1>
                     <h1 className="d-none d-md-block display-3 font-weight-bold">React Bootstrap Ribbon</h1>
-                    <h1 className="d-md-none display-4 font-weight-bold">React Bootstrap Ribbon</h1>
+                    <h1 className="d-md-none font-weight-bold">React Bootstrap Ribbon</h1>
                     <p className="lead font-weight-bolder">A ribbon menu inspired by Microsoft for React using Bootstrap</p>
                     <h1><LgkLogo /></h1>
                 </div>
             </header>
 
-            <section className="docs-first-section py-4">
-                <div className="container py-3">
-                    <p>
-                        The ribbon will fit perfectly in your Bootstrap theme. Checkout how it will look with a dark theme:
-                    </p>
-                    <Form.Switch
-                        id="switch-dark"
-                        className="mb-3"
-                        label="Switch to a dark theme 😎"
-                        value={dark}
-                        onChange={switchDark}
-                    />
-                    <p>
-                        Do you like the dark theme? You can find it and many other themes on Colorganize: <a href="https://colorganize.com/webTheme/2" target="_blank" rel="noopener noreferrer">https://colorganize.com/webTheme/2</a>
-                    </p>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div className="container">
+                    <div class="navbar-nav mr-auto">
+                        <a href="https://github.com/lgkonline/react-bootstrap-ribbon" target="_blank" rel="noopener noreferrer" className="nav-item nav-link">
+                            This project on <span className="icon-github ml-1" /> GitHub
+                        </a>
+                        <a href="https://www.npmjs.com/package/react-bootstrap-ribbon" target="_blank" rel="noopener noreferrer" className="nav-item nav-link">
+                            <span className="icon-npm" /> NPM
+                        </a>
+                        <a href="https://www.behance.net/gallery/49987941/React-Bootstrap-Ribbon" target="_blank" rel="noopener noreferrer" className="nav-item nav-link">
+                            <span className="icon-behance2" /> Behance
+                        </a>
+                    </div>
+                    <div class="navbar-nav">
+                        <a href="https://lgk.io" target="_blank" rel="noopener noreferrer" className="nav-item nav-link">
+                            My other projects
+                        </a>
+                        <a href="https://twitter.com/lgkonline" target="_blank" rel="noopener noreferrer" className="nav-item nav-link">
+                            <span className="icon-twitter" /> Twitter
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+            <section className="docs-first-section pt-4 pb-5">
+                <div className="container">
+                    <article>
+                        <p>
+                            The ribbon will fit perfectly in your Bootstrap theme. Checkout how it will look with a dark theme:
+                        </p>
+                        <Form.Switch
+                            id="switch-dark"
+                            className="mb-3"
+                            label="Switch to a dark theme 😎"
+                            value={dark}
+                            onChange={switchDark}
+                        />
+                        <p>
+                            Do you like the dark theme? You can find it and many other themes on Colorganize: <a href="https://colorganize.com/webTheme/2" target="_blank" rel="noopener noreferrer">https://colorganize.com/webTheme/2</a>
+                        </p>
+                    </article>
 
                     <h2 className="mt-4 mb-3">Simple ribbon</h2>
                     <p>
@@ -215,7 +244,7 @@ function App() {
 
                         <div className="col text-center">
                             <h4>
-                                <a href="https://lgk.io" target="_blank" rel="noopener noreferrer"><LgkLogo /></a>
+                                <a href="https://lgk.io" id="lgk-link" target="_blank" rel="noopener noreferrer"><LgkLogo /></a>
                             </h4>
                         </div>
 

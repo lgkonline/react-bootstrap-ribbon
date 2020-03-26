@@ -15,3 +15,12 @@ $success: #26de81;
 .gist-file {
     @extend .mb-0;
 }
+
+#lgk-link {
+    color: #fba161;
+    transition: color .15s ease-in-out;
+
+    &:hover {
+        color: lighten(#fba161, 6%);
+    }
+}

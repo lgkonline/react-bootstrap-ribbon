@@ -7152,3 +7152,9 @@ a.text-dark:hover, a.text-dark:focus {
 .docs-first-section {
   background-image: linear-gradient(rgba(33, 37, 41, 0.03), rgba(33, 37, 41, 0.05)); }
 
+#lgk-link {
+  color: #fba161;
+  transition: color .15s ease-in-out; }
+  #lgk-link:hover {
+    color: #fcb37f; }
+
