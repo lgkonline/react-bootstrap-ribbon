@@ -11,3 +11,7 @@ $success: #26de81;
 .docs-first-section {
     background-image: linear-gradient(rgba($body-color,.03), rgba($body-color,.05));
 }
+
+.gist-file {
+    @extend .mb-0;
+}
